@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/Waves.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: 1fr 2fr 4fr 2fr;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+nav {
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gudea", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #FBF9F1;
+    padding: 1.25rem;
+}
+
+.title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: #FBF9F1;
+}
+
+.word-container {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(229,225,218,0.3);
+    /* background-color: #AAD7D9; */
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    border-radius: 15px;;
+}
+
+.daily-word {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    padding-bottom: 0;
+    color: #FBF9F1;
+}
+
+h3{
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: #60949c;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.btn {
+    justify-self: end;
+    font-family: "Gudea", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #60949c;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background-color: #E5E1DA;
+    color: #60949c;
+    cursor: pointer;
+}
+
+footer {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+    align-self: end;
+    justify-self: start;
+    padding: 1em;
+    font-family: "Gudea", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #FBF9F1;
+}
