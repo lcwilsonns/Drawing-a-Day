@@ -43,5 +43,7 @@ document.querySelector(".btn").addEventListener("click", function () {
   let randomNumber = Math.floor(Math.random() * (words.length - 1));
   let randomChosenWord = words[randomNumber];
   document.querySelector("h3").innerHTML = randomChosenWord + "!";
-  chosenWords.push(randomChosenWord);
+  document.querySelector(
+    "#pinterest"
+  ).href = `https://ca.pinterest.com/search/pins/?q=${randomChosenWord}&rs=typed`;
 });
